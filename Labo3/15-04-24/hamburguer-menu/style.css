@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, Helvetica, sans-serifs;
+  margin: 0px;
+  padding: 0px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  z-index: 2;
+  left: -250px;
+  transition: left 0.3s;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.menu-list li {
+  padding: 10px 0px;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.5s;
+}
+
+.menu-list a:hover {
+  background-color: aqua;
+}
+
+.open-menu {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 2;
+  transition: left 0.3s;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+.open-menu::after {
+  content: attr(data-open);
+}
+
+#toggle-menu:checked + .open-menu::after {
+  content: attr(data-closed);
+}
+
+#toggle-menu:checked ~ .menu {
+  left: 0;
+}
+
+#toggle-menu:checked ~ .open-menu {
+  left: 250px;
+}
+
+#toggle-menu:checked ~ .content {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.content {
+  transition: background-color 0.5s;
+}
