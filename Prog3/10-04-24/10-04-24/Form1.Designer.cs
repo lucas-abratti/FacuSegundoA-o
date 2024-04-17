@@ -1,6 +1,6 @@
 ﻿namespace _10_04_24
 {
-    partial class Form1
+    partial class frmEjercicio5
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -185,7 +185,7 @@
             this.agregarSocio.UseVisualStyleBackColor = true;
             this.agregarSocio.Click += new System.EventHandler(this.agregarSocio_Click);
             // 
-            // Form1
+            // frmEjercicio5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -206,8 +206,8 @@
             this.Controls.Add(this.totBtn);
             this.Controls.Add(this.lista);
             this.Controls.Add(this.fecha);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmEjercicio5";
+            this.Text = "frmEjercicio5";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
