@@ -5,6 +5,11 @@ body {
   color: rgba(248, 215, 38, 255);
 }
 
+a {
+  text-decoration: none;
+  color: rgba(248, 215, 38, 255);
+}
+
 .navbar {
   display: flex;
   background-color: rgba(101, 30, 0, 255);
@@ -33,6 +38,7 @@ body {
   position: relative;
   width: 100vw;
   background-color: rgba(50, 106, 35, 255);
+  z-index: 2;
 }
 
 .cards-container {
@@ -90,4 +96,102 @@ body {
   z-index: 1;
   transition: all 0.5s;
   transition-timing-function: ease-in-out;
+}
+
+/* --------------------- */
+
+.img-container {
+  position: relative;
+  top: 40vw;
+  overflow: hidden;
+  height: fit-content;
+  padding-bottom: 10vw;
+}
+
+.img-with-text {
+  z-index: -2;
+  opacity: 0.2;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.desayuno-lago {
+  width: 150%;
+}
+
+.img-container:hover .desayuno-lago {
+  opacity: 1;
+  width: 115%;
+}
+
+.text-container {
+  background-color: rgba(0, 0, 0, 0.809);
+  border-radius: 40px;
+  padding: 5vw;
+  font-size: 1.5rem;
+  width: 50vw;
+  position: relative;
+  top: 5vw;
+  left: 5vw;
+}
+
+.img-container:hover .bosque {
+  opacity: 1;
+  width: 100%;
+}
+
+.bosque {
+  width: 150%;
+  top: -10vw;
+}
+
+.img-container:hover .cascada {
+  opacity: 1;
+  width: 100%;
+}
+.cascada {
+  width: 150%;
+  top: -10vw;
+}
+
+.text-cascada {
+  left: 30vw;
+}
+.text-bosque {
+  left: 30vw;
+}
+
+/* --------------------- */
+
+.divider {
+  padding: 2vw;
+  position: relative;
+  top: 40vw;
+  background-color: rgba(101, 30, 0, 255);
+  text-align: center;
+}
+
+.map {
+  position: relative;
+  top: 40vw;
+  background-color: rgba(50, 106, 35, 255);
+}
+
+.map img {
+  width: 40vw;
+  margin: 0% 29%;
+}
+
+/* --------------------- */
+
+footer {
+  text-align: center;
+  position: relative;
+  top: 38vw;
+  background-color: rgba(101, 30, 0, 255);
+  min-height: 10vw;
+}
+
+footer p {
+  padding: 4vw;
 }
